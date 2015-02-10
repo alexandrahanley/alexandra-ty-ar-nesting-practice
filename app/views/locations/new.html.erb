@@ -1,0 +1,45 @@
+<%= form_for [@company, @location]  html: {class: "form-horizontal"} do |f| %>
+
+<div class="container">
+  <div class="page-header">
+    <h1>New Location</h1>
+  </div>
+
+  <%= form_for @location, html: {class: 'form-horizontal'} do |f| %>
+
+  <div class="form-group">
+    <%= f.label :name, class: "col-md-2" %>
+    <%= f.text_field :name, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :suffix, class: "col-md-2" %>
+    <%= f.text_field :suffix, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :catch_phrase, class: "col-md-2" %>
+    <%= f.text_field :catch_phrase, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email, class: "col-md-2" %>
+    <%= f.text_field :email, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :start_date, class: "col-md-2" %>
+    <%= f.text_field :start_date, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :industry, class: "col-md-2" %>
+    <%= f.text_field :industry, class: "col-md-4" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit class: 'btn btn-primary col-md-offset-2'%>
+  </div>
+
+  <% end %>
+</div>
